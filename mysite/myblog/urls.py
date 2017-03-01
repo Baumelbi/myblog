@@ -1,9 +1,10 @@
 from django.conf.urls import url
 from myblog.views import stub_view
+from myblog.views import list_view
 
 urlpatterns = [
     url(r'^$',
-        stub_view,
+        list_view,
         name="blog_index"),
     url(r'^posts/(?P<post_id>\d+)/$',
         stub_view,
